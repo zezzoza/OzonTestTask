@@ -10,11 +10,6 @@ class Progress {
 
     setValue(value) {
         let valueProgress = Number(value)
-        if (valueProgress < 0) {
-            valueProgress = 0
-        } else if (valueProgress > 100) {
-            valueProgress = 100
-        }
 
         const offset = this.length * (1 - valueProgress / 100)
         this.circleMain.style.strokeDashoffset = offset

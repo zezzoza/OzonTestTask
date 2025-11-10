@@ -45,7 +45,7 @@ body {
 }
 
 .progress[data-state="hide"] {
-    display: none;
+    opacity: 0;
 }
 .panel {
     width: 100%;
