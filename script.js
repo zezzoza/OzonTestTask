@@ -9,9 +9,7 @@ class Progress {
     }
 
     setValue(value) {
-        let valueProgress = Number(value)
-
-        const offset = this.length * (1 - valueProgress / 100)
+        const offset = this.length * (1 - value / 100)
         this.circleMain.style.strokeDashoffset = offset
     }
 
@@ -50,7 +48,14 @@ const circle = new Progress({
 circle.setValue(progressValue.value)
 
 progressValue.addEventListener("input", (event) => {
-    circle.setValue(event.target.value)
+    let value = Number(event.target.value)
+    if (value > 100) {
+        value = 100
+    } else if (value < 0) {
+        value = 0
+    }
+    event.target.value = value
+    circle.setValue(value)
 })
 
 progressAnimate.addEventListener("change", (event) => {

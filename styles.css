@@ -102,7 +102,7 @@ body {
     border: none;
     outline: none;
     height: 25px;
-    width: 40px;
+    width: 45px;
     text-align: center;
     border: 1px solid #000000;
     border-radius: 100px;
@@ -120,7 +120,7 @@ body {
 }
 
 .toggle-ui {
-    width: 40px;
+    width: 45px;
     height: 25px;
     border-radius: 100px;
     background: #cde6ff;
@@ -144,7 +144,7 @@ body {
 }
 
 .toggle-input:checked + .toggle-ui .toggle-thumb {
-    transform: translateX(15px);
+    transform: translateX(20px);
 }
 
 @media (max-width: 568px) {
