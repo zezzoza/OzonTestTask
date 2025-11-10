@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Тестовое задание</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <p>Progress</p>
+            <div class="progres-wrapper">
+                <div class="progress" data-state="normal">
+                    <div class="circle-wrapper">
+                        <svg class="circle-svg" viewBox="0 0 120 120">
+                            <circle class="circle-back" cx="60" cy="60" r="52" />
+                            <circle class="circle-main" cx="60" cy="60" r="52" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <div class="panel-wrapper">
+                        <label class="form-action">
+                            <input
+                                id="progress-value"
+                                class="form-input"
+                                type="number"
+                                value="52"
+                            />
+                            <span class="form-label">Value</span>
+                        </label>
+
+                        <label class="form-action form-toggle">
+                            <input id="progress-animate" class="toggle-input" type="checkbox" />
+                            <div class="toggle-ui">
+                                <div class="toggle-thumb"></div>
+                            </div>
+                            <span class="form-label">Animate</span>
+                        </label>
+
+                        <label class="form-action form-toggle">
+                            <input id="progress-hide" class="toggle-input" type="checkbox" />
+                            <div class="toggle-ui">
+                                <div class="toggle-thumb"></div>
+                            </div>
+                            <span class="form-label">Hide</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
